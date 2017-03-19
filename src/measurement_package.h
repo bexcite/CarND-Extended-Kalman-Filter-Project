@@ -15,4 +15,7 @@ public:
   Eigen::VectorXd raw_measurements_;
 };
 
+std::ostream& operator<<(std::ostream& os, MeasurementPackage const& mp);
+
+
 #endif /* MEASUREMENT_PACKAGE_H_ */

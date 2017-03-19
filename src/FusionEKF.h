@@ -7,6 +7,8 @@
 #include <fstream>
 #include "kalman_filter.h"
 #include "tools.h"
+#include "Eigen/Dense"
+#include <iostream>
 
 class FusionEKF {
 public:
@@ -36,6 +38,13 @@ private:
 
   // previous timestamp
   long previous_timestamp_;
+
+  //set the acceleration noise components
+  float noise_ax;
+  float noise_ay;
+
+  // Format for debugging purpose
+  Eigen::IOFormat fmt_;
 
   // tool object used to compute Jacobian and RMSE
   Tools tools;

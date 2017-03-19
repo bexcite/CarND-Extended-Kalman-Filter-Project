@@ -7,6 +7,7 @@
 #include "FusionEKF.h"
 #include "ground_truth_package.h"
 #include "measurement_package.h"
+#include <typeinfo>
 
 using namespace std;
 using Eigen::MatrixXd;
@@ -49,7 +50,14 @@ void check_files(ifstream& in_file, string& in_name,
   }
 }
 
+
 int main(int argc, char* argv[]) {
+
+  cout << endl << "======= START EVERYTHING =============" << endl;
+
+//  cout << "argc = " << argc << endl;
+
+//  cout << "argv[0] = " << argv[0] << endl;
 
   check_arguments(argc, argv);
 
@@ -65,6 +73,11 @@ int main(int argc, char* argv[]) {
   vector<GroundTruthPackage> gt_pack_list;
 
   string line;
+
+//  cout << "In_file_name: " << in_file_name_ << endl;
+
+
+
 
   // prep the measurement packages (each line represents a measurement at a
   // timestamp)
@@ -124,15 +137,33 @@ int main(int argc, char* argv[]) {
     gt_pack_list.push_back(gt_package);
   }
 
+  cout << "size measurement_pack_list: " << measurement_pack_list.size() << endl;
+  cout << "size gt_pack_list: " << gt_pack_list.size() << endl;
+
+  cout << "measurement_pack_list[0] =  " << measurement_pack_list[0] << endl;
+  cout << "gt_pack_list[0] =  " << gt_pack_list[0] << endl;
+
+//  cout << "sizeof gt_pack_list[0] =  " << sizeof(gt_pack_list[0].gt_values_) << endl;
+//  cout << "sizeof gt_pack_list[0] =  " << sizeof(gt_pack_list[0].gt_values_) << endl;
+
+
+
+
+
   // Create a Fusion EKF instance
   FusionEKF fusionEKF;
+
 
   // used to compute the RMSE later
   vector<VectorXd> estimations;
   vector<VectorXd> ground_truth;
 
+  // Formatter for Vectors
+  Eigen::IOFormat CommaInitFmt(Eigen::StreamPrecision, Eigen::DontAlignCols, ", ", ", ", "", "", "", "");
+
   //Call the EKF-based fusion
   size_t N = measurement_pack_list.size();
+//  size_t N = 10;
   for (size_t k = 0; k < N; ++k) {
     // start filtering from the second frame (the speed is unknown in the first
     // frame)
@@ -165,11 +196,24 @@ int main(int argc, char* argv[]) {
 
     estimations.push_back(fusionEKF.ekf_.x_);
     ground_truth.push_back(gt_pack_list[k].gt_values_);
+
+    cout << "EST: " << fusionEKF.ekf_.x_.format(CommaInitFmt) << endl;
+    cout << "GRT: " << gt_pack_list[k].gt_values_.format(CommaInitFmt) << endl;
   }
+
+  cout << "size estimations: " << estimations.size() << endl;
+  cout << "size ground_truth: " << ground_truth.size() << endl;
+
+//  cout << "estimations[0] = " << estimations[0].format(CommaInitFmt) << endl;
+//  cout << "ground_truth[0] = " << ground_truth[0].format(CommaInitFmt) << endl;
+
 
   // compute the accuracy (RMSE)
   Tools tools;
   cout << "Accuracy - RMSE:" << endl << tools.CalculateRMSE(estimations, ground_truth) << endl;
+
+
+
 
   // close files
   if (out_file_.is_open()) {

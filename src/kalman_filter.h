@@ -68,6 +68,9 @@ public:
   void UpdateEKF(const VectorXd &z);
 
 
+  VectorXd CartToPolar(const VectorXd &x);
+
+
 };
 
 #endif /* KALMAN_FILTER_H_ */

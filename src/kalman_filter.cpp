@@ -2,6 +2,9 @@
 #include <math.h>
 #include <iostream>
 
+using Eigen::MatrixXd;
+using Eigen::VectorXd;
+
 KalmanFilter::KalmanFilter() {}
 
 KalmanFilter::~KalmanFilter() {}

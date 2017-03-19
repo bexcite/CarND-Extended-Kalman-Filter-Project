@@ -2,6 +2,10 @@
 #include "tools.h"
 #include <math.h>
 
+using Eigen::VectorXd;
+using Eigen::MatrixXd;
+using std::vector;
+
 Tools::Tools() {}
 
 Tools::~Tools() {}

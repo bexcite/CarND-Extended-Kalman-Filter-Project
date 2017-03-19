@@ -6,3 +6,6 @@ build/
 
 # editor config
 .vscode/
+
+# CLion build files
+cmake-build-debug/

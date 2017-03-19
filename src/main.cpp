@@ -53,7 +53,7 @@ void check_files(ifstream& in_file, string& in_name,
 
 int main(int argc, char* argv[]) {
 
-  cout << endl << "======= START EVERYTHING =============" << endl;
+//  cout << endl << "======= START EVERYTHING =============" << endl;
 
 //  cout << "argc = " << argc << endl;
 
@@ -137,16 +137,14 @@ int main(int argc, char* argv[]) {
     gt_pack_list.push_back(gt_package);
   }
 
-  cout << "size measurement_pack_list: " << measurement_pack_list.size() << endl;
-  cout << "size gt_pack_list: " << gt_pack_list.size() << endl;
 
-  cout << "measurement_pack_list[0] =  " << measurement_pack_list[0] << endl;
-  cout << "gt_pack_list[0] =  " << gt_pack_list[0] << endl;
+//  cout << "size measurement_pack_list: " << measurement_pack_list.size() << endl;
+//  cout << "size gt_pack_list: " << gt_pack_list.size() << endl;
+//  cout << "measurement_pack_list[0] =  " << measurement_pack_list[0] << endl;
+//  cout << "gt_pack_list[0] =  " << gt_pack_list[0] << endl;
 
 //  cout << "sizeof gt_pack_list[0] =  " << sizeof(gt_pack_list[0].gt_values_) << endl;
 //  cout << "sizeof gt_pack_list[0] =  " << sizeof(gt_pack_list[0].gt_values_) << endl;
-
-
 
 
 
@@ -197,12 +195,13 @@ int main(int argc, char* argv[]) {
     estimations.push_back(fusionEKF.ekf_.x_);
     ground_truth.push_back(gt_pack_list[k].gt_values_);
 
-    cout << "EST: " << fusionEKF.ekf_.x_.format(CommaInitFmt) << endl;
-    cout << "GRT: " << gt_pack_list[k].gt_values_.format(CommaInitFmt) << endl;
+//    cout << "EST: " << fusionEKF.ekf_.x_.format(CommaInitFmt) << endl;
+//    cout << "GRT: " << gt_pack_list[k].gt_values_.format(CommaInitFmt) << endl;
+
   }
 
-  cout << "size estimations: " << estimations.size() << endl;
-  cout << "size ground_truth: " << ground_truth.size() << endl;
+//  cout << "size estimations: " << estimations.size() << endl;
+//  cout << "size ground_truth: " << ground_truth.size() << endl;
 
 //  cout << "estimations[0] = " << estimations[0].format(CommaInitFmt) << endl;
 //  cout << "ground_truth[0] = " << ground_truth[0].format(CommaInitFmt) << endl;

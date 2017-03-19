@@ -56,6 +56,8 @@ VectorXd KalmanFilter::CartToPolar(const VectorXd &x) {
 
   pol[1] = atan2(x[1], x[0]);
 
+//  std::cout << "atan2 = " << pol[1] << std::endl;
+
   double d = pol[0];
   if (d < 1e-6) d = 1e-6;
 
@@ -72,10 +74,17 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
   //VectorXd z_pred = H_ * x_;
   VectorXd z_pred = CartToPolar(x_);
 
-  // std::cout << "z_pred = " << std::endl << z_pred << std::endl;
-
 
   VectorXd y = z - z_pred;
+
+  // Make it in -pi;pi range
+  // but there actually no such data in provided datasets :(
+  while (std::abs(y[1]) > M_PI) {
+    if (y[1] < 0) y[1] += M_PI;
+    else if (y[1] > 0) y[1] -= M_PI;
+    //std::cout << "y_phi = " << y[1] << " pi" << M_PI << std::endl;
+  }
+
   MatrixXd Ht = H_.transpose();
   MatrixXd S = H_ * P_ * Ht + R_;
   MatrixXd Si = S.inverse();

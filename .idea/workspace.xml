@@ -13,8 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfd5e691-f2d4-4f54-9771-5499dbb68198" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FusionEKF.cpp" afterPath="$PROJECT_DIR$/src/FusionEKF.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kalman_filter.cpp" afterPath="$PROJECT_DIR$/src/kalman_filter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,19 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FusionEKF.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FusionEKF.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FusionEKF.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2461">
-              <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+            <state relative-caret-position="928">
+              <caret line="122" column="18" lean-forward="true" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <element signature="e#1716#1819#0" expanded="true" />
-                <element signature="e#2273#2334#0" expanded="true" />
-                <element signature="e#3029#3094#0" expanded="true" />
-                <element signature="e#5697#5736#0" expanded="true" />
-                <element signature="e#5835#5892#0" expanded="true" />
-                <element signature="e#6289#6443#0" expanded="true" />
+                <element signature="e#1714#1817#0" expanded="true" />
+                <element signature="e#2271#2332#0" expanded="true" />
+                <element signature="e#3027#3092#0" expanded="true" />
+                <element signature="e#5695#5734#0" expanded="true" />
+                <element signature="e#5833#5890#0" expanded="true" />
+                <element signature="e#6287#6441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kalman_filter.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kalman_filter.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kalman_filter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+            <state relative-caret-position="44">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -177,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/ground_truth_package.h" />
         <option value="$PROJECT_DIR$/src/kalman_filter.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/src/FusionEKF.cpp" />
         <option value="$PROJECT_DIR$/src/kalman_filter.cpp" />
+        <option value="$PROJECT_DIR$/src/FusionEKF.cpp" />
       </list>
     </option>
   </component>
@@ -190,10 +188,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="24" />
-    <option name="width" value="1280" />
-    <option name="height" value="727" />
+    <option name="x" value="375" />
+    <option name="y" value="163" />
+    <option name="width" value="1709" />
+    <option name="height" value="1073" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -243,34 +241,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExtendedKF" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CarND-Extended-Kalman-Filter-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ExtendedKF" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CarND-Extended-Kalman-Filter-Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,18 +450,18 @@
       <option name="presentableId" value="Default" />
       <updated>1488867728231</updated>
       <workItem from="1488867731748" duration="1995000" />
-      <workItem from="1488944136568" duration="36821000" />
+      <workItem from="1488944136568" duration="38455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38816000" />
+    <option name="totallyTimeSpent" value="40450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="24" width="1280" height="727" extended-state="6" />
+    <frame x="375" y="163" width="1709" height="1073" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18601896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -815,28 +785,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FusionEKF.cpp">
+    <entry file="file://$PROJECT_DIR$/src/kalman_filter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2461">
-          <caret line="72" column="15" lean-forward="false" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
+        <state relative-caret-position="44">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#1716#1819#0" expanded="true" />
-            <element signature="e#2273#2334#0" expanded="true" />
-            <element signature="e#3029#3094#0" expanded="true" />
-            <element signature="e#5697#5736#0" expanded="true" />
-            <element signature="e#5835#5892#0" expanded="true" />
-            <element signature="e#6289#6443#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kalman_filter.cpp">
+    <entry file="file://$PROJECT_DIR$/src/FusionEKF.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+        <state relative-caret-position="928">
+          <caret line="122" column="18" lean-forward="true" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#1714#1817#0" expanded="true" />
+            <element signature="e#2271#2332#0" expanded="true" />
+            <element signature="e#3027#3092#0" expanded="true" />
+            <element signature="e#5695#5734#0" expanded="true" />
+            <element signature="e#5833#5890#0" expanded="true" />
+            <element signature="e#6287#6441#0" expanded="true" />
           </folding>
         </state>
       </provider>

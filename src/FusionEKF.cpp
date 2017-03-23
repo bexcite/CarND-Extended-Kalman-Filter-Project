@@ -51,8 +51,8 @@ FusionEKF::FusionEKF() {
   ekf_.x_ << 0, 0, 0, 0;
 
   ekf_.P_ = MatrixXd(4, 4);
-  ekf_.P_ << 1000, 0,    0,    0,
-             0,    1000, 0,    0,
+  ekf_.P_ << 0.5, 0,    0,    0,
+             0,    0.5, 0,    0,
              0,    0,    1000, 0,
              0,    0,    0,    1000;
 
@@ -70,8 +70,8 @@ FusionEKF::FusionEKF() {
              0, 0, 0, 0;
 
   //set the acceleration noise components
-  noise_ax = 5;
-  noise_ay = 5;
+  noise_ax = 8;
+  noise_ay = 8;
 
 }
 
